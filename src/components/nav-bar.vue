@@ -1,5 +1,5 @@
 <template>
-  <el-menu :ellipsis="true" :default-active="$route.name" class="el-menu-demo" mode="horizontal" :router="true">
+  <el-menu :default-active="$route.name" mode="horizontal" :router="true">
     <el-menu-item index="home" :route="{name:'home'}">Home</el-menu-item>
     <el-menu-item index="cart" v-show="!!user" :route="{name:'cart'}">
       <span>Shopping Cart <span class="badge">{{ items }}</span></span>
