@@ -28,7 +28,7 @@ export default{
         const authStore = useAuthStore()
         const cartStore = useCartStore()
         const user = reactive({
-            email:'khaled@gmail.com',
+            email:'user@gmail.com',
             password:'123456'
         })
         const errMsg = ref(null)
