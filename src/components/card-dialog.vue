@@ -1,5 +1,5 @@
 <template>
-    <el-card :body-style="{ padding: '0px' }">
+    <el-card :body-style="{ padding: '0px' }" style="margin-bottom: 8px">
         <div class="hvr" @click="dialogTableVisible = true">
             <el-image class="vu-img" :src="getUrl(product.images[0])" style="margin-top: 10px;"></el-image>
         </div>
