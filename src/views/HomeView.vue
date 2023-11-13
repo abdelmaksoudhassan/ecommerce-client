@@ -65,18 +65,18 @@
         const product = this.getProduct(id)
         if(product){
           const {title} = product
-          this.deleteProduct(id)
+          this.removeProduct(id)
           this.$message({ message: `(${title}) product deleted`, type: 'error', showClose: true })
         }
       }),
       io.on('editProduct',(product)=>{
         const {_id,title} = product
         this.$message({ message: `(${title}) product updated`, type: 'warning', showClose: true })
-        this.editProduct(_id,product)
+        this.updateProduct(_id,product)
       })
     },
     methods:{
-        ...mapActions(useProductStore,['setProductStore','popProduct','pushToProducts','getProduct','deleteProduct','editProduct']),
+        ...mapActions(useProductStore,['setProductStore','popProduct','pushToProducts','getProduct','removeProduct','updateProduct']),
     fetchData(){
         this.loading=true
         this.$axios.instance().get(`all-products?page=${this.currentPage}&count=${this.pageSize}`).then(res=>{
