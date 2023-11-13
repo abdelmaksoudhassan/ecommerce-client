@@ -13,13 +13,13 @@ export const useProductStore = defineStore('product',{
         pushToProducts(data){
             this.products.unshift(data)
         },
-        deleteProduct(id){
+        removeProduct(id){
             this.products = this.products.filter(product=>product._id != id)
         },
         popProduct(){
             this.products.pop()
         },
-        editProduct(id,product){
+        updateProduct(id,product){
             const index = this.products.findIndex(x=>x._id==id)
             if(index != -1){
                 this.products[index] = product
