@@ -42,6 +42,7 @@ export default{
         },
         submitForm(){
             this.loading = true
+            this.user.email = this.user.email.toLowerCase()
             this.$axios.instance().post('/user/login',{...this.user}).then(response=>{
                 this.loading = false
                 const {token,user} = response.data
