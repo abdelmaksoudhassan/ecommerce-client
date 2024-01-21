@@ -92,7 +92,7 @@ import { mapActions } from 'pinia'
 export default {
     components:{ UploadImage,InputField,Alert },
     setup(){
-        const url = ref("https://nodejs-ecommerce-o2e5.onrender.com/user/change-photo")
+        const url = ref("https://nodejs-ecommerce-kd41.onrender.com/user/change-photo")
         const headers = reactive({ 'Token': getToken() })
         const name = reactive({ first:'', last:'' })
         const password = reactive({ old:'', new:'' })
