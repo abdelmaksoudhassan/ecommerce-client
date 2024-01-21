@@ -19,7 +19,7 @@ export const useAuthStore = defineStore('auth',{
         },
         imageUrl(state){
             return state.user.image ?
-             'https://nodejs-ecommerce-o2e5.onrender.com/'+state.user.image :
+             'https://nodejs-ecommerce-kd41.onrender.com/'+state.user.image :
              "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png"
         }
     },
