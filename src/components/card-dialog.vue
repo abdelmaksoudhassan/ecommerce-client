@@ -42,7 +42,7 @@ defineProps({
     }
 })
 const getUrl=(img)=>{
-    return 'https://nodejs-ecommerce-o2e5.onrender.com/' + img
+    return 'https://nodejs-ecommerce-kd41.onrender.com/' + img
 }
 </script>
 <style scoped>
