@@ -5,7 +5,7 @@
       <el-table-column fixed="left" label="Product">
         <template #default="scope">
           <div class="flex-col">
-            <el-avatar shape="square" :size="50"  :src="'https://nodejs-ecommerce-o2e5.onrender.com/'+scope.row.productId.images[0]"></el-avatar>
+            <el-avatar shape="square" :size="50"  :src="'https://nodejs-ecommerce-kd41.onrender.com/'+scope.row.productId.images[0]"></el-avatar>
             <span>{{scope.row.productId.title}}</span>
           </div>
         </template>
