@@ -1,5 +1,5 @@
 import socket from 'socket.io-client'
-export const io = socket('https://nodejs-ecommerce-o2e5.onrender.com',{
+export const io = socket('https://nodejs-ecommerce-kd41.onrender.com',{
     withCredentials: true,
     autoConnect: false
 })
